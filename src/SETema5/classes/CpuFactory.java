@@ -1,5 +1,7 @@
-package SETema5.interfaces;
+package SETema5.classes;
 
+import SETema5.interfaces.ICpu;
+import SETema5.interfaces.IHdd;
 import SETema5.patterns.src.AMDCpu;
 import SETema5.patterns.src.IntelCPU;
 

@@ -1,5 +1,7 @@
-package SETema5.patterns.src;
+package SETema5.classes;
 
+import SETema5.classes.AbstractFactoryPeriferics;
+import SETema5.classes.FactoryProducer;
 import SETema5.interfaces.*;
 
 /**

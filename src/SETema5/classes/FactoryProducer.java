@@ -1,4 +1,4 @@
-package SETema5.interfaces;
+package SETema5.classes;
 
 /**
  * Created by Mihai on 11/10/2014.

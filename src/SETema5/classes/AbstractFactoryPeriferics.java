@@ -1,4 +1,7 @@
-package SETema5.interfaces;
+package SETema5.classes;
+
+import SETema5.interfaces.ICpu;
+import SETema5.interfaces.IHdd;
 
 /**
  * Created by Mihai on 11/10/2014.
