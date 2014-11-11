@@ -25,10 +25,10 @@ public class Main {
         AbstractFactoryPeriferics myCpuFactory = FactoryProducer.getFactory("CPU");
 
         ICpu microp1 = myCpuFactory.getMicroprocessor(2500,"INTEL");
-        microp1.produce();
+        microp1.produce(2500,22);
 
-        microp1 = myCpuFactory.getMicroprocessor(2200,"AMD");
-        microp1.produce();
+        microp1 = myCpuFactory.getMicroprocessor(2500,"AMD");
+        microp1.produce(2500,22);
 
         /*
             May i continue with my production of cpu-microprocessors
@@ -39,11 +39,12 @@ public class Main {
          */
 
         AbstractFactoryPeriferics myHddFactory = FactoryProducer.getFactory("HDD");
-        IHdd myHddSet = myHddFactory.getHddDevices(320,"WesternDigital  Business");
-        myHddSet.create();
+
+        IHdd myHddSet = myHddFactory.getHddDevices(320,"Seagate 4Family");
+        myHddSet.create(1000,7200,3);
 
         myHddSet = myHddFactory.getHddDevices(250,"Seagate Enterprise");
-        myHddSet.create();
+        myHddSet.create(320,10000,5);
 
 
         /*

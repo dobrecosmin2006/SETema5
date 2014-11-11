@@ -5,14 +5,18 @@ package SETema5.classes;
  *
  * here i have implemented a class for my method abstract from AbstractFactoryPeriferics
  */
+
 public class FactoryProducer {
 
     public static AbstractFactoryPeriferics getFactory ( String choice ){
 
 
-        if(choice.startsWith("CPU")){
+        if(choice.startsWith("CPU"))
+        {
             return new CpuFactory();
-        } else if(choice.startsWith("HDD")){
+
+        } else if(choice.startsWith("HDD"))
+        {
             return new HddFactory();
         }
         return null;

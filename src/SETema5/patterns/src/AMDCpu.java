@@ -10,9 +10,30 @@ import SETema5.interfaces.ICpu;
  */
 public class AMDCpu implements ICpu {
 
+    private int frequency;
+    private int band;
+    private String firmware="AMD";
+    private int numberCPUCreated = 0;
+
+    public void show_specs(){
+        System.out.println(" AmdCPU:" + frequency + " band " + band + "designed by: " + firmware);
+
+    }
+
+    public void IncrementNoProducts(){
+        this.numberCPUCreated++;
+    }
+
+
     @Override
-    public void produce(){
+    public void produce(int freq, int band)
+    {
+        this.frequency = freq;
+        this.band  = band;
+        this.firmware="AMD";
         System.out.println(" A AMD CPU have been created.");
+        this.IncrementNoProducts();
+        this.show_specs();
     }
 
 

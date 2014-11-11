@@ -7,5 +7,5 @@ package SETema5.interfaces;
  */
 public interface IHdd {
 
-    void create();
+    void create(int cap, int nrr, int g);              // I will create some HDDint cap, int nrr, int g
 }

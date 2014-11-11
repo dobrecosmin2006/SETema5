@@ -9,9 +9,29 @@ import SETema5.interfaces.ICpu;
  */
 public class IntelCPU implements ICpu{
 
-    @Override
-    public void produce(){
-        System.out.println(" A Intel CPU have been created.");
+    private int frequency;
+    private int band;
+    private String firmware="INTEL";
+    private int numberCPUCreated = 0;
 
+    public void show_specs(){
+        System.out.println(" IntelCPU:" + frequency + " band " + band + "designed by: " + firmware);
+
+    }
+
+    public void IncrementNoProducts(){
+        this.numberCPUCreated++;
+    }
+
+
+    @Override
+    public void produce(int freq, int band)
+    {
+        this.frequency = freq;
+        this.band  = band;
+        this.firmware="INTEL";
+        System.out.println(" A INTEL CPU have been created.");
+        this.IncrementNoProducts();
+        this.show_specs();
     }
 }

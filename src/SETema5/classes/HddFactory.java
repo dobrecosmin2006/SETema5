@@ -23,7 +23,7 @@ public class HddFactory extends AbstractFactoryPeriferics {
 
             return new SeagateHDD();
         }
-        else if (producer.startsWith("Wes")){
+        else if (producer.startsWith("Western")){
 
             return new WesternDigitalHDD();
 

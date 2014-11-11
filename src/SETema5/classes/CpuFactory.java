@@ -23,12 +23,15 @@ public class CpuFactory extends AbstractFactoryPeriferics {
 
     @Override
     public ICpu getMicroprocessor(int frecventa, String producer) {
+
         if (frecventa == 0)
             return null;
+
         else if( producer.startsWith("AMD")) {
 
             return new AMDCpu();
         }
+
         else if (producer.startsWith("INTEL")){
 
             return new IntelCPU();
